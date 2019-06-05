@@ -9,27 +9,27 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {}
+  interface MenuShidoris {}
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMenuShidorisElement extends Components.MenuShidoris, HTMLStencilElement {}
+  var HTMLMenuShidorisElement: {
+    prototype: HTMLMenuShidorisElement;
+    new (): HTMLMenuShidorisElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'menu-shidoris': HTMLMenuShidorisElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {}
+  interface MenuShidoris extends JSXBase.HTMLAttributes<HTMLMenuShidorisElement> {}
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'menu-shidoris': MenuShidoris;
   }
 }
 
